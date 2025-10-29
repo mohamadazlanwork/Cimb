@@ -82,8 +82,6 @@ It captures my hands-on experience in:
   <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Recruitment%20Drive%20(Walk-In%20Interviews).jpg?raw=true" width="380" alt="Recruitment Drive - Walk-In Interviews"><br>
 
   <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Potluck.jpg?raw=true" width="380" alt="HRBP Chill Out Session Potluck">
-  <img src="https://media.licdn.com/dms/image/v2/C5622AQHlmeHLW_KZOQ/feedshare-shrink_2048_1536/0/1677571410538?e=1763596800&v=beta&t=PYqaheSfsTi1aUmE7kVlyNdvZyIJ2-QjHsV67xDEiF8" width="380" alt="CIMB Official MCTF LinkedIn Post">
-
 </p>
 
 > ✨ *"Each image reflects the people, passion, and purpose behind every milestone achieved with #teamCIMB."*
