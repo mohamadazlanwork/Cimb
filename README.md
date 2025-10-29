@@ -1,53 +1,88 @@
-<!-- 🌟 CIMB PORTFOLIO README - Animated Version by Mohamad Azlan -->
+<!-- 🌟 CIMB PORTFOLIO README - Calm Animated Version by Mohamad Azlan -->
 
 <style>
+  /* --- BACKGROUND & FONT --- */
   body {
-    background: linear-gradient(270deg, #001f3f, #004080, #0074D9, #00BFFF);
-    background-size: 800% 800%;
-    animation: gradientShift 20s ease infinite;
-    color: #f5f5f5;
+    background: linear-gradient(135deg, #f7f9fb, #e3f0ff);
+    color: #222;
     font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
   }
 
-  @keyframes gradientShift {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-  }
-
+  /* --- HEADERS --- */
   h1, h2, h3 {
-    animation: floatText 3s ease-in-out infinite alternate;
+    text-align: center;
+    color: #b30000;
+    transition: transform 0.4s ease, color 0.4s ease;
   }
 
-  @keyframes floatText {
-    0% { transform: translateY(0px); }
-    100% { transform: translateY(-5px); }
+  h1:hover, h2:hover, h3:hover {
+    transform: scale(1.04);
+    color: #ff4b2b;
   }
 
+  /* --- PARAGRAPHS & TEXT ANIMATION ON HOVER --- */
+  p, li, td, b, i {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  p:hover, li:hover, td:hover, b:hover, i:hover {
+    transform: translateX(4px);
+    color: #0074D9;
+  }
+
+  /* --- IMAGE STYLE --- */
   img {
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    transition: transform 0.6s ease;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    margin: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
   }
 
   img:hover {
-    transform: scale(1.05) rotate(1deg);
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
   }
 
+  /* --- TABLE DESIGN --- */
   table {
-    background: rgba(255,255,255,0.05);
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   }
+
+  th, td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  tr:hover {
+    background-color: #f8f8f8;
+  }
+
+  /* --- SECTION DIVIDERS --- */
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 30px 0;
+  }
+
 </style>
 
-<h1 align="center">🏢 CIMB HR Portfolio</h1>
+<h1>🏢 CIMB HR Portfolio</h1>
 
 <p align="center">
   <b>Showcasing my journey at CIMB — driving employer branding, HR operations, and recruitment analytics through innovation and teamwork.</b>
 </p>
 
----
+<hr>
 
 ## 🎯 Overview
 This repository documents my **career highlights and HR achievements** during my tenure at **CIMB Group**, one of Asia’s leading financial institutions.  
@@ -57,7 +92,7 @@ It captures my hands-on experience in:
 - Leadership Exposure & Employee Engagement  
 - Event Management & Talent Development Initiatives  
 
----
+<hr>
 
 ## 🌍 Key Achievements at CIMB
 
@@ -70,7 +105,7 @@ It captures my hands-on experience in:
 | 🌿 **Employee Wellness (Chill Out Session)** | Organized internal HRBP team sessions to boost morale and foster a positive, high-performing culture. |
 | 🏅 **CIMB HR Asia Award** | Contributed to CIMB winning **Best Company to Work For in Asia 2022**, recognizing organizational culture excellence. |
 
----
+<hr>
 
 ## 🖼️ Career Highlights Gallery
 <p align="center">
@@ -86,7 +121,7 @@ It captures my hands-on experience in:
 
 > ✨ *"Each image reflects the people, passion, and purpose behind every milestone achieved with #teamCIMB."*
 
----
+<hr>
 
 ## 📊 Supporting Project — Power BI HR Dashboard
 Even beyond events, I built **Power BI HR dashboards** for analytical insights and data-driven decision-making.  
@@ -99,13 +134,13 @@ These dashboards visualize:
 📎 [View Dashboard Repository →](https://github.com/mohamadazlanwork/Powerbi_Dashboard)  
 📊 [View Dashboard Live →](https://mohamadazlanwork.github.io/Powerbi_Dashboard/)
 
----
+<hr>
 
 ## ⚙️ Tools & Skills
-`Power BI` · `Zoho Recruit` · `Excel` · `Employer Branding` · `Data Analytics` · `HRBP Collaboration`  
+`Power BI` · `Zoho Recruit` · `Excel` · `Employer Branding` · `Data Analytics` · `HRBP Collaboration`
 
----
+<hr>
 
-<p align="center" style="animation: floatText 3s ease-in-out infinite alternate;">
+<p align="center">
   💡 <i>“Bridging HR and Analytics to empower data-driven talent transformation.”</i>
 </p>
