@@ -1,79 +1,90 @@
-<!-- 🌟 CIMB PORTFOLIO README - Calm Animated Version by Mohamad Azlan -->
+<!-- 🌟 CIMB PORTFOLIO README - Clean Static Version by Mohamad Azlan -->
 
 <style>
   /* --- BACKGROUND & FONT --- */
   body {
-    background: linear-gradient(135deg, #f7f9fb, #e3f0ff);
+    background: #fafafa;
     color: #222;
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 0 15px;
   }
 
   /* --- HEADERS --- */
   h1, h2, h3 {
     text-align: center;
-    color: #b30000;
+    color: #a60000;
     transition: transform 0.4s ease, color 0.4s ease;
   }
 
   h1:hover, h2:hover, h3:hover {
-    transform: scale(1.04);
-    color: #ff4b2b;
+    transform: scale(1.03);
+    color: #cc0000;
   }
 
-  /* --- PARAGRAPHS & TEXT ANIMATION ON HOVER --- */
+  /* --- TEXT ANIMATION ON HOVER --- */
   p, li, td, b, i {
     transition: transform 0.3s ease, color 0.3s ease;
   }
 
   p:hover, li:hover, td:hover, b:hover, i:hover {
     transform: translateX(4px);
-    color: #0074D9;
+    color: #cc0000;
   }
 
   /* --- IMAGE STYLE --- */
   img {
     border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
     margin: 10px;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
   }
 
   img:hover {
     transform: scale(1.03);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
   }
 
   /* --- TABLE DESIGN --- */
   table {
     width: 100%;
     border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.9);
+    background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   }
 
   th, td {
     padding: 12px 16px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #eee;
   }
 
   tr:hover {
-    background-color: #f8f8f8;
+    background-color: #f9f9f9;
   }
 
   /* --- SECTION DIVIDERS --- */
   hr {
     border: 0;
     height: 1px;
-    background: #ccc;
+    background: #e0e0e0;
     margin: 30px 0;
   }
 
+  /* --- LINKS --- */
+  a {
+    color: #b30000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: #ff4b2b;
+    text-decoration: underline;
+  }
 </style>
 
 <h1>🏢 CIMB HR Portfolio</h1>
@@ -109,7 +120,6 @@ It captures my hands-on experience in:
 
 ## 🖼️ Career Highlights Gallery
 <p align="center">
-
   <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Employer%20Branding%20(MCTF%20Career%20Fair).jpg?raw=true" width="380" alt="Employer Branding at MCTF Career Fair">
   <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/MCTF%20career%20fair%20second%20picture.jpg?raw=true" width="380" alt="CIMB Career Fair second picture"><br>
 
