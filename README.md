@@ -1,190 +1,205 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CIMB HR Portfolio – Mohamad Azlan</title>
-<p style="text-align:center;font-size:0.9rem;color:#ccc;margin-top:10px;">
-⚠️ All visuals in this portfolio are infographic representations only and contain no confidential or proprietary CIMB data.
-</p>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CIMB HR Portfolio – Mohamad Azlan</title>
 
-<style>
-/* ====== RESET ====== */
-*{margin:0;padding:0;box-sizing:border-box;}
-body{
-  font-family:'Poppins',sans-serif;
-  background:#0a0a0a;
-  color:#fff;
-  line-height:1.8;
-  overflow-x:hidden;
-}
+  <style>
+  /* ====== RESET ====== */
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:'Poppins',sans-serif;
+    background:#0a0a0a;
+    color:#fff;
+    line-height:1.8;
+    overflow-x:hidden;
+  }
 
-/* ====== BRAND COLORS ====== */
-:root{
-  --cimb-red:#A50034;
-  --cimb-light:#ff3355;
-  --cimb-dark:#33000d;
-}
+  /* ====== BRAND COLORS ====== */
+  :root{
+    --cimb-red:#A50034;
+    --cimb-light:#ff3355;
+    --cimb-dark:#33000d;
+  }
 
-/* ====== BACKGROUND GRID & LIGHT ====== */
-body::before{
-  content:"";
-  position:fixed;inset:0;
-  background:
-    radial-gradient(circle at 25% 25%,rgba(165,0,52,0.4),transparent 70%),
-    radial-gradient(circle at 75% 75%,rgba(255,0,64,0.3),transparent 80%),
-    linear-gradient(135deg,#0a0a0a 10%,#180000 60%,#000);
-  z-index:-3;
-}
-body::after{
-  content:"";
-  position:fixed;inset:0;
-  background-image:
-    repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 80px),
-    repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 80px);
-  opacity:.2;
-  z-index:-2;
-}
+  /* ====== BACKGROUND GRID & LIGHT ====== */
+  body::before{
+    content:"";
+    position:fixed;inset:0;
+    background:
+      radial-gradient(circle at 25% 25%,rgba(165,0,52,0.4),transparent 70%),
+      radial-gradient(circle at 75% 75%,rgba(255,0,64,0.3),transparent 80%),
+      linear-gradient(135deg,#0a0a0a 10%,#180000 60%,#000);
+    z-index:-3;
+  }
+  body::after{
+    content:"";
+    position:fixed;inset:0;
+    background-image:
+      repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 80px),
+      repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 80px);
+    opacity:.2;
+    z-index:-2;
+  }
 
-/* animated beam */
-@keyframes beam {
-  0% {transform:translateY(-400px) translateX(-250px);}
-  100% {transform:translateY(120vh) translateX(250px);}
-}
-.lightbeam{
-  position:fixed;
-  top:-300px;left:50%;
-  width:3px;height:400px;
-  background:linear-gradient(to bottom,rgba(255,0,64,0.6),transparent);
-  animation:beam 4s linear infinite;
-  z-index:-1;
-}
+  /* animated beam */
+  @keyframes beam {
+    0% {transform:translateY(-400px) translateX(-250px);}
+    100% {transform:translateY(120vh) translateX(250px);}
+  }
+  .lightbeam{
+    position:fixed;
+    top:-300px;left:50%;
+    width:3px;height:400px;
+    background:linear-gradient(to bottom,rgba(255,0,64,0.6),transparent);
+    animation:beam 4s linear infinite;
+    z-index:-1;
+  }
 
-/* ====== HEADER ====== */
-header{
-  background:linear-gradient(90deg,var(--cimb-red),var(--cimb-dark));
-  color:#fff;
-  text-align:center;
-  padding:3rem 1rem 2rem 1rem;
-  box-shadow:0 0 30px rgba(255,0,64,0.3);
-  position:relative;
-}
-header h1{
-  font-size:2.8rem;
-  text-shadow:0 0 10px rgba(255,0,64,0.5);
-}
-header p{
-  margin-top:.5rem;
-  font-size:1.1rem;
-  opacity:.9;
-  letter-spacing:0.5px;
-}
+  /* ====== HEADER ====== */
+  header{
+    background:linear-gradient(90deg,var(--cimb-red),var(--cimb-dark));
+    color:#fff;
+    text-align:center;
+    padding:3rem 1rem 2rem 1rem;
+    box-shadow:0 0 30px rgba(255,0,64,0.3);
+    position:relative;
+  }
+  header h1{
+    font-size:2.8rem;
+    text-shadow:0 0 10px rgba(255,0,64,0.5);
+  }
+  header p{
+    margin-top:.5rem;
+    font-size:1.1rem;
+    opacity:.9;
+    letter-spacing:0.5px;
+  }
 
-/* ====== SECTION BOXES ====== */
-section{
-  background:rgba(255,255,255,0.05);
-  border:1px solid rgba(255,0,64,0.2);
-  border-radius:14px;
-  padding:2rem;
-  margin:2rem auto;
-  max-width:1000px;
-  box-shadow:0 0 25px rgba(255,0,64,0.15);
-  backdrop-filter:blur(8px);
-}
-h2{
-  color:var(--cimb-light);
-  border-left:4px solid var(--cimb-red);
-  padding-left:12px;
-  margin-bottom:1rem;
-  font-size:1.4rem;
-  text-shadow:0 0 8px rgba(255,0,64,0.4);
-}
-p,li,td,th{color:#f5f5f5;}
-ul{margin-left:1.5rem;margin-top:.5rem;}
-li{margin-bottom:.5rem;}
+  /* ====== DISCLAIMER ====== */
+  .disclaimer{
+    text-align:center;
+    font-size:0.9rem;
+    color:#f3f3f3;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:8px;
+    width:fit-content;
+    margin:1rem auto;
+    padding:8px 16px;
+    backdrop-filter:blur(4px);
+  }
 
-/* ====== TABLE ====== */
-table{
-  width:100%;
-  border-collapse:collapse;
-  margin-top:1rem;
-  border-radius:8px;
-  overflow:hidden;
-}
-th,td{
-  padding:0.9rem 1rem;
-  border-bottom:1px solid rgba(255,255,255,0.1);
-}
-th{
-  background:rgba(255,255,255,0.1);
-  color:var(--cimb-light);
-  text-align:left;
-}
-tr:hover{
-  background:rgba(255,0,64,0.15);
-  transition:0.3s ease;
-}
+  /* ====== SECTION BOXES ====== */
+  section{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,0,64,0.2);
+    border-radius:14px;
+    padding:2rem;
+    margin:2rem auto;
+    max-width:1000px;
+    box-shadow:0 0 25px rgba(255,0,64,0.15);
+    backdrop-filter:blur(8px);
+  }
+  h2{
+    color:var(--cimb-light);
+    border-left:4px solid var(--cimb-red);
+    padding-left:12px;
+    margin-bottom:1rem;
+    font-size:1.4rem;
+    text-shadow:0 0 8px rgba(255,0,64,0.4);
+  }
+  p,li,td,th{color:#f5f5f5;}
+  ul{margin-left:1.5rem;margin-top:.5rem;}
+  li{margin-bottom:.5rem;}
 
-/* ====== TABLE TEXT COLOR FIX ====== */
-table {
-  background: #ffffff; /* solid white background */
-  color: #000; /* solid black text */
-  box-shadow: 0 0 25px rgba(165, 0, 52, 0.3);
-  border-radius: 12px;
-}
+  /* ====== TABLE ====== */
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:1rem;
+    border-radius:8px;
+    overflow:hidden;
+    background:#ffffff; /* white background */
+    color:#000; /* black text */
+    box-shadow:0 0 25px rgba(165, 0, 52, 0.3);
+  }
+  th,td{
+    padding:0.9rem 1rem;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+  }
+  th{
+    background:linear-gradient(90deg,#A50034,#800028);
+    color:#fff !important;
+    text-align:left;
+    font-weight:600;
+  }
+  td{
+    color:#000 !important;
+    font-weight:500;
+  }
+  tr:hover td{
+    background:#fff5f7;
+    transition:0.3s ease;
+  }
 
-table th {
-  background: #A50034; /* CIMB red header */
-  color: #fff !important;
-  font-weight: 600;
-}
+  /* ====== GALLERY ====== */
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:18px;
+    margin-top:1rem;
+  }
+  .gallery img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 0 12px rgba(255,0,64,0.3);
+    transition:transform .3s, box-shadow .3s;
+  }
+  .gallery img:hover{
+    transform:scale(1.06);
+    box-shadow:0 0 25px rgba(255,0,64,0.6);
+  }
 
-table td {
-  color: #000 !important;
-  font-weight: 500;
-}
+  /* ====== SIDE INFO ====== */
+  .side-info{
+    background:rgba(255,255,255,0.06);
+    border-left:5px solid var(--cimb-red);
+    padding:1.5rem;
+    border-radius:10px;
+    margin-top:1.2rem;
+    box-shadow:0 0 10px rgba(255,0,64,0.1);
+  }
+  .side-info h3{
+    color:var(--cimb-light);
+    margin-bottom:0.5rem;
+    text-shadow:0 0 6px rgba(255,0,64,0.4);
+  }
+  .side-info p{font-size:0.95rem;}
 
-tr:hover td {
-  background: #fff5f7; /* light pink hover for readability */
-}
+  /* ====== FOOTER ====== */
+  footer{
+    text-align:center;
+    padding:2rem;
+    color:#bbb;
+    font-size:0.9rem;
+    border-top:1px solid rgba(255,0,64,0.2);
+  }
+  footer a{
+    color:var(--cimb-light);
+    text-decoration:none;
+  }
+  footer a:hover{text-decoration:underline;}
 
-/* ====== SIDE INFO ====== */
-.side-info{
-  background:rgba(255,255,255,0.06);
-  border-left:5px solid var(--cimb-red);
-  padding:1.5rem;
-  border-radius:10px;
-  margin-top:1.2rem;
-  box-shadow:0 0 10px rgba(255,0,64,0.1);
-}
-.side-info h3{
-  color:var(--cimb-light);
-  margin-bottom:0.5rem;
-  text-shadow:0 0 6px rgba(255,0,64,0.4);
-}
-.side-info p{font-size:0.95rem;}
-
-/* ====== FOOTER ====== */
-footer{
-  text-align:center;
-  padding:2rem;
-  color:#bbb;
-  font-size:0.9rem;
-  border-top:1px solid rgba(255,0,64,0.2);
-}
-footer a{
-  color:var(--cimb-light);
-  text-decoration:none;
-}
-footer a:hover{text-decoration:underline;}
-
-/* ====== HOVER GLOW EFFECT ====== */
-section, .side-info, img, table, header{
-  transition:box-shadow .4s ease, transform .4s ease;
-}
-section:hover, .side-info:hover{
-  box-shadow:0 0 35px rgba(255,0,64,0.3);
-}
-</style>
+  /* ====== HOVER GLOW EFFECT ====== */
+  section, .side-info, img, table, header{
+    transition:box-shadow .4s ease, transform .4s ease;
+  }
+  section:hover, .side-info:hover{
+    box-shadow:0 0 35px rgba(255,0,64,0.3);
+  }
+  </style>
 </head>
 
 <body>
@@ -194,6 +209,11 @@ section:hover, .side-info:hover{
   <h1>CIMB HR Highlights & Achievements</h1>
   <p>Human Resources · Employer Branding · Recruitment Analytics</p>
 </header>
+
+<!-- ✅ Disclaimer correctly positioned -->
+<p class="disclaimer">
+⚠️ All visuals in this portfolio are infographic representations only and contain no confidential or proprietary CIMB data.
+</p>
 
 <section>
   <h2>🎯 Overview</h2>
