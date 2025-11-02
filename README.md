@@ -1,163 +1,265 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>CIMB HR Portfolio – Mohamad Azlan</title>
+<p style="text-align:center;font-size:0.9rem;color:#ccc;margin-top:10px;">
+⚠️ All visuals in this portfolio are infographic representations only and contain no confidential or proprietary CIMB data.
+</p>
+
 <style>
+/* ====== RESET ====== */
 *{margin:0;padding:0;box-sizing:border-box;}
-html,body{width:100%;height:100%;font-family:'Inter','Helvetica Neue',sans-serif;background-color:#050505;color:#fff;}
-body{overflow-x:hidden;}
-
-/* ---------- BACKGROUND ---------- */
-.gradient-background{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1;overflow:hidden;}
-.gradient-sphere{position:absolute;border-radius:50%;filter:blur(60px);}
-.sphere-1{width:40vw;height:40vw;background:linear-gradient(40deg,rgba(255,0,128,.8),rgba(255,102,0,.4));top:-10%;left:-10%;animation:float-1 15s ease-in-out infinite alternate;}
-.sphere-2{width:45vw;height:45vw;background:linear-gradient(240deg,rgba(72,0,255,.8),rgba(0,183,255,.4));bottom:-20%;right:-10%;animation:float-2 18s ease-in-out infinite alternate;}
-.sphere-3{width:30vw;height:30vw;background:linear-gradient(120deg,rgba(133,89,255,.5),rgba(98,216,249,.3));top:60%;left:20%;animation:float-3 20s ease-in-out infinite alternate;}
-@keyframes float-1{0%{transform:translate(0,0)scale(1);}100%{transform:translate(10%,10%)scale(1.1);}}
-@keyframes float-2{0%{transform:translate(0,0)scale(1);}100%{transform:translate(-10%,-5%)scale(1.15);}}
-@keyframes float-3{0%{transform:translate(0,0)scale(1);opacity:.3;}100%{transform:translate(-5%,10%)scale(1.05);opacity:.6;}}
-.glow{position:absolute;width:40vw;height:40vh;background:radial-gradient(circle,rgba(72,0,255,.15),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);animation:pulse 8s infinite alternate;filter:blur(30px);}
-@keyframes pulse{0%{opacity:.3;transform:translate(-50%,-50%)scale(.9);}100%{opacity:.7;transform:translate(-50%,-50%)scale(1.1);}}
-.grid-overlay{position:absolute;top:0;left:0;width:100%;height:100%;-size:40px 40px;-image:linear-gradient(to right,rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,.03) 1px,transparent 1px);}
-.noise-overlay{position:absolute;top:0;left:0;width:100%;height:100%;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
-
-/* ---------- PARTICLES ---------- */
-.particles-container{position:fixed;top:0;left:0;width:100%;height:100%;z-index:2;pointer-events:none;}
-.particle{position:absolute;background:white;border-radius:50%;opacity:0;pointer-events:none;}
-
-/* ---------- CONTENT ---------- */
-.content-container{position:relative;z-index:10;max-width:950px;margin:auto;padding:3rem 2rem;text-align:center;}
-/* ---------- CONTENT (READABLE TEXT) ---------- */
-.content-container {
-  position: relative;
-  z-index: 10;
-  max-width: 950px;
-  margin: auto;
-  padding: 3rem 2rem;
-  text-align: center;
+body{
+  font-family:'Poppins',sans-serif;
+  background:#0a0a0a;
+  color:#fff;
+  line-height:1.8;
+  overflow-x:hidden;
 }
 
-section {
-  background: rgba(255, 255, 255, 0.85); /* brighter glass background */
-  color: #222; /* readable dark text */
-  border-radius: 12px;
-  padding: 2rem 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(8px);
+/* ====== BRAND COLORS ====== */
+:root{
+  --cimb-red:#A50034;
+  --cimb-light:#ff3355;
+  --cimb-dark:#33000d;
 }
 
-h1, h2, h3 {
-  color: #111;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
+/* ====== BACKGROUND GRID & LIGHT ====== */
+body::before{
+  content:"";
+  position:fixed;inset:0;
+  background:
+    radial-gradient(circle at 25% 25%,rgba(165,0,52,0.4),transparent 70%),
+    radial-gradient(circle at 75% 75%,rgba(255,0,64,0.3),transparent 80%),
+    linear-gradient(135deg,#0a0a0a 10%,#180000 60%,#000);
+  z-index:-3;
+}
+body::after{
+  content:"";
+  position:fixed;inset:0;
+  background-image:
+    repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 80px),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 80px);
+  opacity:.2;
+  z-index:-2;
 }
 
-h1:hover, h2:hover, h3:hover {
-  transform: scale(1.04);
-  color: #a60000; /* CIMB red accent */
+/* animated beam */
+@keyframes beam {
+  0% {transform:translateY(-400px) translateX(-250px);}
+  100% {transform:translateY(120vh) translateX(250px);}
+}
+.lightbeam{
+  position:fixed;
+  top:-300px;left:50%;
+  width:3px;height:400px;
+  background:linear-gradient(to bottom,rgba(255,0,64,0.6),transparent);
+  animation:beam 4s linear infinite;
+  z-index:-1;
 }
 
-p, li {
-  color: #222;
-  margin-bottom: 0.8rem;
+/* ====== HEADER ====== */
+header{
+  background:linear-gradient(90deg,var(--cimb-red),var(--cimb-dark));
+  color:#fff;
+  text-align:center;
+  padding:3rem 1rem 2rem 1rem;
+  box-shadow:0 0 30px rgba(255,0,64,0.3);
+  position:relative;
+}
+header h1{
+  font-size:2.8rem;
+  text-shadow:0 0 10px rgba(255,0,64,0.5);
+}
+header p{
+  margin-top:.5rem;
+  font-size:1.1rem;
+  opacity:.9;
+  letter-spacing:0.5px;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top: 1rem;
-  color: #222;
+/* ====== SECTION BOXES ====== */
+section{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,0,64,0.2);
+  border-radius:14px;
+  padding:2rem;
+  margin:2rem auto;
+  max-width:1000px;
+  box-shadow:0 0 25px rgba(255,0,64,0.15);
+  backdrop-filter:blur(8px);
+}
+h2{
+  color:var(--cimb-light);
+  border-left:4px solid var(--cimb-red);
+  padding-left:12px;
+  margin-bottom:1rem;
+  font-size:1.4rem;
+  text-shadow:0 0 8px rgba(255,0,64,0.4);
+}
+p,li,td,th{color:#f5f5f5;}
+ul{margin-left:1.5rem;margin-top:.5rem;}
+li{margin-bottom:.5rem;}
+
+/* ====== TABLE ====== */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:1rem;
+  border-radius:8px;
+  overflow:hidden;
+}
+th,td{
+  padding:0.9rem 1rem;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+th{
+  background:rgba(255,255,255,0.1);
+  color:var(--cimb-light);
+  text-align:left;
+}
+tr:hover{
+  background:rgba(255,0,64,0.15);
+  transition:0.3s ease;
 }
 
-th, td {
-  padding: 0.8rem 1rem;
-  text-align: left;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  color: #222 !important;
+/* ====== GALLERY ====== */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:18px;
+  margin-top:1rem;
+}
+.gallery img{
+  width:100%;
+  border-radius:10px;
+  box-shadow:0 0 12px rgba(255,0,64,0.3);
+  transition:transform .3s, box-shadow .3s;
+}
+.gallery img:hover{
+  transform:scale(1.06);
+  box-shadow:0 0 25px rgba(255,0,64,0.6);
 }
 
-tr:hover {
-  background: rgba(255, 255, 255, 0.7);
+/* ====== SIDE INFO ====== */
+.side-info{
+  background:rgba(255,255,255,0.06);
+  border-left:5px solid var(--cimb-red);
+  padding:1.5rem;
+  border-radius:10px;
+  margin-top:1.2rem;
+  box-shadow:0 0 10px rgba(255,0,64,0.1);
 }
+.side-info h3{
+  color:var(--cimb-light);
+  margin-bottom:0.5rem;
+  text-shadow:0 0 6px rgba(255,0,64,0.4);
+}
+.side-info p{font-size:0.95rem;}
 
-img{border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,.4);margin:10px;transition:transform .4s ease;}
-img:hover{transform:scale(1.05);}
-a{color:#ff3a82;text-decoration:none;}
-a:hover{text-decoration:underline;}
-.btn{background:linear-gradient(90deg,#ff3a82,#5233ff);color:#fff;font-weight:600;padding:.8rem 2rem;border:none;border-radius:50px;cursor:pointer;transition:all .3s ease;box-shadow:0 4px 20px rgba(255,58,130,.3);}
-.btn:hover{transform:translateY(-3px);box-shadow:0 6px 25px rgba(255,58,130,.45);}
+/* ====== FOOTER ====== */
+footer{
+  text-align:center;
+  padding:2rem;
+  color:#bbb;
+  font-size:0.9rem;
+  border-top:1px solid rgba(255,0,64,0.2);
+}
+footer a{
+  color:var(--cimb-light);
+  text-decoration:none;
+}
+footer a:hover{text-decoration:underline;}
+
+/* ====== HOVER GLOW EFFECT ====== */
+section, .side-info, img, table, header{
+  transition:box-shadow .4s ease, transform .4s ease;
+}
+section:hover, .side-info:hover{
+  box-shadow:0 0 35px rgba(255,0,64,0.3);
+}
 </style>
 </head>
+
 <body>
+<div class="lightbeam"></div>
 
-<!-- Background Layers -->
-<div class="gradient-background">
-  <div class="gradient-sphere sphere-1"></div>
-  <div class="gradient-sphere sphere-2"></div>
-  <div class="gradient-sphere sphere-3"></div>
-  <div class="glow"></div>
-  <div class="grid-overlay"></div>
-  <div class="noise-overlay"></div>
-  <div class="particles-container" id="particles-container"></div>
-</div>
+<header>
+  <h1>CIMB HR Highlights & Achievements</h1>
+  <p>Human Resources · Employer Branding · Recruitment Analytics</p>
+</header>
 
-<!-- Main Content -->
-<div class="content-container">
+<section>
+  <h2>🎯 Overview</h2>
+  <p>
+    This portfolio reflects my journey at <strong>CIMB Group</strong> (2022–2023) as part of the HR team in Kuala Lumpur.  
+    My focus areas included <em>Employer Branding</em>, <em>Talent Acquisition</em>, <em>HRBP Support</em>, and <em>Employee Engagement</em>.  
+    Through collaboration and innovation, I contributed to projects that strengthened CIMB’s culture, visibility, and operational excellence.
+  </p>
+  <ul>
+    <li>Human Resources Business Partner (Group Operations)</li>
+    <li>Recruitment Operations & Walk-In Interviews</li>
+    <li>Leadership Engagement & Employer Branding</li>
+    <li>Employee Wellness & Culture Building</li>
+  </ul>
+</section>
 
-  <section>
-    <h1>🏢 CIMB HR Portfolio</h1>
-    <p><b>Showcasing my journey at CIMB — driving employer branding, HR operations and recruitment analytics through innovation and teamwork.</b></p>
-  </section>
+<section>
+  <h2>🌟 Key Achievements</h2>
+  <table>
+    <tr><th>Highlight</th><th>Description</th></tr>
+    <tr><td>🏆 Employer Branding (MCTF Career Fair)</td><td>Represented HR at Malaysia Career & Training Fair engaging 5,000+ visitors and positioning CIMB as a preferred employer.</td></tr>
+    <tr><td>💼 Group Operations Walk-In Interview</td><td>Executed a large-scale hiring event; collaborated with HRBPs and hiring managers to close 40+ positions in one week.</td></tr>
+    <tr><td>🏢 Grand Launch of CIMB Hub</td><td>Supported HR presence during the new headquarters opening attended by senior leadership and media partners.</td></tr>
+    <tr><td>👥 CEO Engagement</td><td>Interacted with Dato’ Abdul Rahman Ahmad (CEO) recognizing HRBP team contributions to employer branding initiatives.</td></tr>
+    <tr><td>🌿 Chill-Out Sessions</td><td>Organized wellness activities and team potluck events to foster connection and morale.</td></tr>
+    <tr><td>🏅 HR Asia Award 2022</td><td>Contributed inputs for CIMB’s recognition as “Best Company to Work For in Asia”.</td></tr>
+  </table>
+</section>
 
-  <section>
-    <h2>🎯 Overview</h2>
-    <p>This portfolio documents my career highlights and HR achievements during my tenure at CIMB Group, one of Asia’s leading financial institutions. It captures hands-on experience in:</p>
-    <ul>
-      <li>Employer Branding &amp; HRBP Collaboration</li>
-      <li>Recruitment Operations &amp; Walk-In Interviews</li>
-      <li>Leadership Exposure &amp; Employee Engagement</li>
-      <li>Event Management &amp; Talent Development Initiatives</li>
-    </ul>
-  </section>
+<section>
+  <h2>🖼️ Career Highlights Gallery</h2>
+  <div class="gallery">
+    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Employer%20Branding%20(MCTF%20Career%20Fair).jpg?raw=true" alt="MCTF Career Fair">
+    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/MCTF%20career%20fair%20second%20picture.jpg?raw=true" alt="Career Fair">
+    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/CEO%20Engagement.jpg?raw=true" alt="CEO Engagement">
+    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Recruitment%20Drive%20(Walk-In%20Interviews).jpg?raw=true" alt="Walk-In Interview">
+    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Potluck.jpg?raw=true" alt="Potluck Session">
+    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/CIMB%20Hub.jpg?raw=true" alt="CIMB Hub Launch">
+  </div>
+  <p style="margin-top:1rem;"><i>✨ Each photo captures the energy and collaboration within #teamCIMB — from branding events to HR celebrations.</i></p>
+</section>
 
-  <section>
-    <h2>🌍 Key Achievements at CIMB</h2>
-    <table>
-      <tr><th>🎉 Highlight</th><th>💡 Description</th></tr>
-      <tr><td>🏆 Employer Branding (MCTF Career Fair)</td><td>Represented the HR team at the Malaysia Career &amp; Training Fair, engaging 5,000+ attendees and promoting CIMB as a top employer.</td></tr>
-      <tr><td>💼 Recruitment Drive (Walk-In Interviews)</td><td>Executed a high-volume hiring event, closing 40+ positions within a week.</td></tr>
-      <tr><td>🏢 CIMB Hub Grand Launch</td><td>Supported planning and HR presence for the grand opening attended by senior management and media partners.</td></tr>
-      <tr><td>👥 CEO Engagement</td><td>Met Dato’ Abdul Rahman, CEO of CIMB, in recognition of HRBP team contributions.</td></tr>
-      <tr><td>🌿 Employee Wellness (Chill Out Session)</td><td>Organized HRBP team sessions to boost morale and team culture.</td></tr>
-      <tr><td>🏅 CIMB HR Asia Award</td><td>Contributed to CIMB winning Best Company to Work For in Asia 2022.</td></tr>
-    </table>
-  </section>
+<section>
+  <h2>💬 Side Stories & Experiences</h2>
+  <div class="side-info">
+    <h3>📢 Featured on CIMB LinkedIn</h3>
+    <p>Thrilled to be featured on CIMB’s official LinkedIn page, representing HR during the MCTF Career Fair and highlighting employer branding initiatives.</p>
+  </div>
+  <div class="side-info">
+    <h3>🎉 EPICC Roadshow Participation</h3>
+    <p>Supported CIMB’s EPICC innovation program by collaborating across departments and promoting team culture through interactive booths and merchandise distribution.</p>
+  </div>
+  <div class="side-info">
+    <h3>💐 Farewell Celebrations & Team Bonding</h3>
+    <p>Coordinated farewell gatherings and breakfast sessions to strengthen relationships and foster a positive HR workplace environment.</p>
+  </div>
+</section>
 
-  <section>
-    <h2>🖼️ Career Highlights Gallery</h2>
-    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Employer%20Branding%20(MCTF%20Career%20Fair).jpg?raw=true" width="360" alt="Employer Branding at MCTF Career Fair">
-    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/MCTF%20career%20fair%20second%20picture.jpg?raw=true" width="360" alt="Career Fair second picture">
-    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/CEO%20Engagement.jpg?raw=true" width="360" alt="CEO Engagement">
-    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Recruitment%20Drive%20(Walk-In%20Interviews).jpg?raw=true" width="360" alt="Walk-In Interview">
-    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Potluck.jpg?raw=true" width="360" alt="Potluck Session">
-    <p><i>✨ Each image reflects the people, passion, and purpose behind every milestone achieved with #teamCIMB.</i></p>
-  </section>
+<section>
+  <h2>🧭 Reflection & Key Learning</h2>
+  <p>
+    My time at CIMB was transformative — blending corporate discipline with human connection.  
+    Through hands-on projects in recruitment and branding, I learned to bridge strategic HR initiatives with data-driven decision-making.
+  </p>
+  <p><strong>Tagline:</strong> “Bridging HR and Analytics to empower data-driven talent transformation.”</p>
+</section>
 
-  <p style="margin-top:1rem;">💡 <i>“Bridging HR and Analytics to empower data-driven talent transformation.”</i></p>
-</div>
+<footer>
+  <p>© 2022 Mohamad Azlan | <a href="#">Back to Top</a></p>
+</footer>
 
-<script>
-/* --- particles --- */
-const pc=document.getElementById('particles-container');const count=80;for(let i=0;i<count;i++)makeP();
-function makeP(){const p=document.createElement('div');p.className='particle';const s=Math.random()*3+1;p.style.width=`${s}px`;p.style.height=`${s}px`;reset(p);pc.appendChild(p);move(p);}
-function reset(p){const x=Math.random()*100,y=Math.random()*100;p.style.left=`${x}%`;p.style.top=`${y}%`;p.style.opacity='0';return{x,y};}
-function move(p){const pos=reset(p);const dur=Math.random()*10+10,del=Math.random()*5;setTimeout(()=>{p.style.transition=`all ${dur}s linear`;p.style.opacity=Math.random()*0.3+0.1;const mx=pos.x+(Math.random()*20-10),my=pos.y-Math.random()*30;p.style.left=`${mx}%`;p.style.top=`${my}%`;setTimeout(()=>move(p),dur*1000);},del*1000);}
-document.addEventListener('mousemove',e=>{const x=(e.clientX/window.innerWidth)*100,y=(e.clientY/window.innerHeight)*100;const p=document.createElement('div');p.className='particle';const s=Math.random()*4+2;p.style.width=`${s}px`;p.style.height=`${s}px`;p.style.left=`${x}%`;p.style.top=`${y}%`;p.style.opacity='0.6';pc.appendChild(p);setTimeout(()=>{p.style.transition='all 2s ease-out';p.style.left=`${x+(Math.random()*10-5)}%`;p.style.top=`${y+(Math.random()*10-5)}%`;p.style.opacity='0';setTimeout(()=>p.remove(),2000);},10);});
-</script>
 </body>
 </html>
