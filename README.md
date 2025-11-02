@@ -227,7 +227,8 @@ section:hover, .side-info:hover{
     <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/CEO%20Engagement.jpg?raw=true" alt="CEO Engagement">
     <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Recruitment%20Drive%20(Walk-In%20Interviews).jpg?raw=true" alt="Walk-In Interview">
     <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Potluck.jpg?raw=true" alt="Potluck Session">
-    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/CIMB%20Hub.jpg?raw=true" alt="CIMB Hub Launch">
+    <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/CIMB%20Grand%20Launching.jpeg?raw=true" alt="CIMB Grand Launching">
+
   </div>
   <p style="margin-top:1rem;"><i>✨ Each photo captures the energy and collaboration within #teamCIMB — from branding events to HR celebrations.</i></p>
 </section>
