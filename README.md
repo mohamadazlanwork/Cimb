@@ -148,26 +148,6 @@ a:hover{text-decoration:underline;}
     <p><i>✨ Each image reflects the people, passion, and purpose behind every milestone achieved with #teamCIMB.</i></p>
   </section>
 
-  <section>
-    <h2>📊 Supporting Project — Power BI HR Dashboard</h2>
-    <p>Built Power BI dashboards for data-driven HR insights visualizing:</p>
-    <ul>
-      <li>Placement performance &amp; FACT Index trends</li>
-      <li>Specialist efficiency &amp; recruitment outcomes</li>
-    </ul>
-    <p>
-      📎 <a href="https://github.com/mohamadazlanwork/Powerbi_Dashboard" target="_blank">View Repository</a><br/>
-      📊 <a href="https://mohamadazlanwork.github.io/Powerbi_Dashboard/" target="_blank">View Live Dashboard</a>
-    </p>
-  </section>
-
-  <section>
-    <h3>⚙️ Tools &amp; Skills</h3>
-    <p>Power BI · Zoho Recruit · Excel · Employer Branding · Data Analytics · HRBP Collaboration</p>
-    <br/>
-    <a href="https://github.com/mohamadazlanwork/Cimb" target="_blank"><button class="btn">Open GitHub Project</button></a>
-  </section>
-
   <p style="margin-top:1rem;">💡 <i>“Bridging HR and Analytics to empower data-driven talent transformation.”</i></p>
 </div>
 
