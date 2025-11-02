@@ -231,15 +231,34 @@
 
 <section>
   <h2>🌟 Key Achievements</h2>
-  <table>
-    <tr><th>Highlight</th><th>Description</th></tr>
-    <tr><td>🏆 Employer Branding (MCTF Career Fair)</td><td>Represented HR at Malaysia Career & Training Fair engaging 5,000+ visitors and positioning CIMB as a preferred employer.</td></tr>
-    <tr><td>💼 Group Operations Walk-In Interview</td><td>Executed a large-scale hiring event; collaborated with HRBPs and hiring managers to close 40+ positions in one week.</td></tr>
-    <tr><td>🏢 Grand Launch of CIMB Hub</td><td>Supported HR presence during the new headquarters opening attended by senior leadership and media partners.</td></tr>
-    <tr><td>👥 CEO Engagement</td><td>Interacted with Dato’ Abdul Rahman Ahmad (CEO) recognizing HRBP team contributions to employer branding initiatives.</td></tr>
-    <tr><td>🌿 Chill-Out Sessions</td><td>Organized wellness activities and team potluck events to foster connection and morale.</td></tr>
-    <tr><td>🏅 HR Asia Award 2022</td><td>Contributed inputs for CIMB’s recognition as “Best Company to Work For in Asia”.</td></tr>
-  </table>
+
+  <div style="
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(165, 0, 52, 0.25);
+    font-weight: 500;
+    line-height: 1.7;
+  ">
+    <p>🏆 <strong>Employer Branding (MCTF Career Fair)</strong><br>
+    Represented HR at Malaysia Career & Training Fair engaging 5,000+ visitors and positioning CIMB as a preferred employer.</p><br>
+
+    <p>💼 <strong>Group Operations Walk-In Interview</strong><br>
+    Executed a large-scale hiring event; collaborated with HRBPs and hiring managers to close 40+ positions in one week.</p><br>
+
+    <p>🏢 <strong>Grand Launch of CIMB Hub</strong><br>
+    Supported HR presence during the new headquarters opening attended by senior leadership and media partners.</p><br>
+
+    <p>👥 <strong>CEO Engagement</strong><br>
+    Interacted with Dato’ Abdul Rahman Ahmad (CEO) recognizing HRBP team contributions to employer branding initiatives.</p><br>
+
+    <p>🌿 <strong>Chill-Out Sessions</strong><br>
+    Organized wellness activities and team potluck events to foster connection and morale.</p><br>
+
+    <p>🏅 <strong>HR Asia Award 2022</strong><br>
+    Contributed inputs for CIMB’s recognition as “Best Company to Work For in Asia”.</p>
+  </div>
 </section>
 
 <section>
