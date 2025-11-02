@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -124,6 +125,20 @@ tr:hover{
   transition:0.3s ease;
 }
 
+/* ====== TABLE TEXT COLOR FIX ====== */
+table {
+  background: rgba(255, 255, 255, 0.9); /* bright glass background */
+  color: #000;
+  box-shadow: 0 0 20px rgba(165, 0, 52, 0.3);
+}
+table th {
+  background: #A50034; /* CIMB red header */
+  color: #fff !important;
+}
+table td {
+  color: #000 !important; /* black text */
+}
+
 /* ====== GALLERY ====== */
 .gallery{
   display:grid;
@@ -227,7 +242,6 @@ section:hover, .side-info:hover{
     <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Recruitment%20Drive%20(Walk-In%20Interviews).jpg?raw=true" alt="Walk-In Interview">
     <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/Potluck.jpg?raw=true" alt="Potluck Session">
     <img src="https://github.com/mohamadazlanwork/Cimb/blob/main/CIMB/CIMB%20Grand%20Launching.jpeg?raw=true" alt="CIMB Grand Launching">
-
   </div>
   <p style="margin-top:1rem;"><i>✨ Each photo captures the energy and collaboration within #teamCIMB — from branding events to HR celebrations.</i></p>
 </section>
