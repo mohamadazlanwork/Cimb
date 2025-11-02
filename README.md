@@ -126,34 +126,25 @@ tr:hover{
 
 /* ====== TABLE TEXT COLOR FIX ====== */
 table {
-  background: rgba(255, 255, 255, 0.9); /* bright glass background */
-  color: #000;
-  box-shadow: 0 0 20px rgba(165, 0, 52, 0.3);
+  background: #ffffff; /* solid white background */
+  color: #000; /* solid black text */
+  box-shadow: 0 0 25px rgba(165, 0, 52, 0.3);
+  border-radius: 12px;
 }
+
 table th {
   background: #A50034; /* CIMB red header */
   color: #fff !important;
-}
-table td {
-  color: #000 !important; /* black text */
+  font-weight: 600;
 }
 
-/* ====== GALLERY ====== */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:18px;
-  margin-top:1rem;
+table td {
+  color: #000 !important;
+  font-weight: 500;
 }
-.gallery img{
-  width:100%;
-  border-radius:10px;
-  box-shadow:0 0 12px rgba(255,0,64,0.3);
-  transition:transform .3s, box-shadow .3s;
-}
-.gallery img:hover{
-  transform:scale(1.06);
-  box-shadow:0 0 25px rgba(255,0,64,0.6);
+
+tr:hover td {
+  background: #fff5f7; /* light pink hover for readability */
 }
 
 /* ====== SIDE INFO ====== */
