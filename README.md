@@ -130,7 +130,7 @@ footer{
 <h2>🧭 Reflection</h2>
 <p>My experience at CIMB was transformative — balancing strategic HR execution with meaningful human connection. I learned to align people initiatives with measurable business impact while fostering a culture of collaboration and well-being.</p>
 
-<footer>© 2025 HR Portfolio | Mohamad Azlan | CIMB Group</footer>
+<footer>© 2023 HR Portfolio | Mohamad Azlan | CIMB Group</footer>
 
 <div id="lightbox"></div>
 
